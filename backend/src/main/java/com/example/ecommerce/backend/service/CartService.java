@@ -1,7 +1,6 @@
 package com.example.ecommerce.backend.service;
 
 import com.example.ecommerce.backend.model.CartItem;
-import com.example.ecommerce.backend.model.User;
 
 import java.math.BigDecimal;
 import java.util.List;

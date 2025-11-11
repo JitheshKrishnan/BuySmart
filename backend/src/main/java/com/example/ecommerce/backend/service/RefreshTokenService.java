@@ -39,13 +39,13 @@ public class RefreshTokenService {
             // Update existing token
             refreshToken = existingTokenOpt.get();
             refreshToken.setExpiryDate(Instant.now().plusMillis(refreshTokenDurationMs));
-            refreshToken.setToken(UUID.randomUUID().toString());
+            refreshToken.setAccessToken(UUID.randomUUID().toString());
         } else {
             // Create new token
             refreshToken = new RefreshToken();
             refreshToken.setUser(user);
             refreshToken.setExpiryDate(Instant.now().plusMillis(refreshTokenDurationMs));
-            refreshToken.setToken(UUID.randomUUID().toString());
+            refreshToken.setAccessToken(UUID.randomUUID().toString());
         }
 
         return refreshTokenRepository.save(refreshToken);
