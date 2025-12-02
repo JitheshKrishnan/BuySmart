@@ -1,2 +1,2 @@
-# E-Commerce-Application
-A full-stack E-Commerce app with React (Frontend) &amp; Spring Boot (Backend), using scalable design. Features user auth, product management; cart management, order processing, simulated payments, and email notifications.
+# BuySmart
+A scalable E-Commerce backend application built using Spring Boot, featuring user authentication, role-based access, product and inventory management, cart handling, order processing, simulated payment flow, and email notifications.
